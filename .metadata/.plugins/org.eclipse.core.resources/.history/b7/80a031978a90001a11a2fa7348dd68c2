@@ -1,0 +1,53 @@
+package cz.epickejtejpek.kalkulacka;
+
+import java.util.Scanner;
+
+public class kalkulacka {
+	static boolean ukoncit = false;
+	static Scanner in = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		while (!ukoncit) {
+			ukazMenu();
+		}
+	}
+	public static void ukazMenu() {
+		System.out.println("1) Scitani\n2) Odcitat\n0) Ukoncit\nZadejte vasi volbu: ");
+		switch (in.nextInt()) {   // \n -> nový řádek
+		case 1:
+			scitej();
+			break;
+		case 2:
+			odcitej();
+			break;
+		case 0:
+			ukoncit = true;
+			break;
+		default:
+			ukazMenu("Neplatná volba! Zadejte znovu.");
+		}
+	}
+	public static void ukazMenu(String zprava) { // tohle se jmenuje přetížení metod
+		System.out.println(zprava);
+		ukazMenu();
+	}
+	
+	
+	public static void odcitej() {
+		System.out.println("Zadejte mensenec: ");
+		int prvni = in.nextInt();
+		System.out.println("Zadejte mensitel: ");
+		int druhy = in.nextInt();
+		System.out.println("Výsledek je: " + (prvni - druhy) + "\n\n");
+
+		
+	}
+	public static void scitej() {
+		System.out.println("Zadejte první scitanec: ");
+		int prvni = in.nextInt();
+		System.out.println("Zadejte druhý scitanec: ");
+		int druhy = in.nextInt();
+		System.out.println("Výsledek je: " + (prvni + druhy) + "\n\n");
+	}
+	
+}

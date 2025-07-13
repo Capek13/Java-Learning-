@@ -1,0 +1,27 @@
+
+public class Tutorial2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int pocitadlo = 0;
+		//int pl = 0;
+		
+		// dokud 
+		while( pocitadlo < 20) {
+			System.out.println("Číslo počítadla je: " + pocitadlo);
+			pocitadlo++;
+		//	pl = ++pocitadlo;
+		}
+		
+		for(int a = 0; a < 20; a++) {
+			
+			
+			if((a % 2) != 0)
+				continue; // nebo break
+			System.out.println("Cislo: " + a);
+			
+		}
+		// break vypíše nulu .. proč ?  video #8 3:00
+	}
+
+}

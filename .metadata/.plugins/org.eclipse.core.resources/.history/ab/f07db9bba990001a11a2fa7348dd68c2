@@ -1,0 +1,21 @@
+package cz.epickejtejpek.kalkulacka;
+
+import java.util.Scanner;
+
+public class kalkulacak2 {
+
+	static Scanner in = new Scanner(System.in);
+	static int celeCislo;
+	static String retezec;
+	
+	public static void main(String[] args) {
+		System.out.println("Zadejte číslo: ");
+		celeCislo = in.nextInt();
+		
+		System.out.println("\nZadejte retezec: ");
+		retezec = in.nextLine();
+		
+		System.out.println("Zadané císlo je: " + celeCislo + "a retezec je \"" + retezec + "\"");
+	}
+
+}

@@ -1,0 +1,14 @@
+package cz.epickejtejpek.kalkulacka;
+
+public class Enumeratory {
+ 
+	//JEDNÁ SE O OSEKANÝ/ VLASTNÍ DATOVÝ TYP
+	
+	enum Barvy { CERVENA, ZELENA, CERNA, MODRA, ZLUTA	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

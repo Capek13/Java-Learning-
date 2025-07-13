@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/mira/Documents/iBetter/Programovani/JAVA/.metadata/.plugins/org.eclipse.jdt.core
+1342261880.index
+2721861369.index

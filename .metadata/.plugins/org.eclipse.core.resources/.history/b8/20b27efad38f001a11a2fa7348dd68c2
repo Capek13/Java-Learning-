@@ -1,0 +1,36 @@
+
+public class Tutorial3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int celeCislo = 5; 
+		
+		if(celeCislo == 5)
+			System.out.println("Prom je rovna 5");
+		else if(celeCislo == 8)
+			System.out.println("Prom je 8");
+		else if(celeCislo == 10)
+			System.out.println("Prom je = 10");
+		
+		switch(celeCislo) {
+		case 5:
+			System.out.println("Prom 5"); break;
+		case 8:
+			System.out.println("Prom je 8"); break;
+		case 10:
+			System.out.println("Prom je = 10"); break;
+		
+		
+		}
+		
+		
+		switch(celeCislo) {
+		case 5:
+			System.out.println("Prom 5"); 
+		case 8:
+			System.out.println("Prom je 8"); 
+		case 10:
+			System.out.println("Prom je = 10"); 
+		}
+	}
+}

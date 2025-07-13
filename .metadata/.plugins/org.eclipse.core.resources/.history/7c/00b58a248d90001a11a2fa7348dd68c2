@@ -1,0 +1,15 @@
+package cz.epickejtejpek.kalkulacka;
+
+public class Pole1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] cisla = new int[4]; //pole cisla má velikost 4 
+		cisla[0] = 2;
+		cisla[1] = 2;
+		cisla[2] = 2;
+		cisla[3] = 2;
+		System.out.println(cisla[3]);
+	}
+
+}

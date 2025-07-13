@@ -1,0 +1,31 @@
+package cz.epickejtejpek.kalkulacka;
+
+public class Pole1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] cisla = new int[4]; //pole cisla má velikost 4 
+		cisla[0] = 0;
+		cisla[1] = 1;
+		cisla[2] = 2;
+		cisla[3] = 3;
+		cisla = pole(cisla);
+		System.out.println(cisla[2]);
+	}
+	/**public static void pole(int[] celaCisla) {
+		for(int a = 0; a < celaCisla.length; a++) { //v jiných jazicích by bylo zjištění velikosti pole, v javě nakonec stačí dat .length -> pole.length
+		celaCisla[a] += 5; //přičítání +=
+		System.out.println(celaCisla[a]);
+		}
+	}**/
+	
+	//VRACENÍ POLE METODĚ
+	public static int[] pole(int[] celaCisla) {
+		int[] novePole = celaCisla;
+		for(int a = 0; a < novePole.length; a++) {
+			novePole[a] += 5;
+		}
+		return novePole;
+	}
+	
+}

@@ -1,0 +1,25 @@
+package cz.epickejtejpek.kalkulacka;
+
+import java.util.Scanner;
+
+public class kalkulacak2 {
+
+	static Scanner in = new Scanner(System.in);
+	static int celeCislo;
+	static String retezec;
+	
+	public static void main(String[] args) {
+		System.out.println("Zadejte číslo: ");
+		celeCislo = in.nextInt(); // TADY SE VEZME JEN CELE ČÍSLO A ZNAK DALŠÍHO ŘÁDKU ZŮSTÁVÁ V BUFERU
+		// DALE BY SI PŘEČETL ŽE  V DALŠÍ ČASTI TO PŘEČTE Z BUFERU, KDE PŘEČTE ZNAK DALŠÍHO ŘÁDKU, ŘEKNE SI ŽE ŘADEK UŽ SKONČIL A VŠECHNO CO TAM MĚLO BÝT UŽ TAM JE
+		//in.nextLine(); <- asi to může být i tady, v tomto případě to v konzoli vypadalo stejně
+		System.out.println("\nZadejte retezec: ");
+		in.nextLine(); // tady se vloží aby s tím program neměl problém
+		retezec = in.nextLine();
+		
+		System.out.println("Zadané císlo je: " + celeCislo + "a retezec je \"" + retezec + "\"");
+	}
+
+}
+//https://www.youtube.com/watch?v=HHppT4Q4-pM&list=PLCC47AEAE0BCC4C0C&index=21
+// problem s řádkem kterej si to vezme do bufru a kod pak neví 

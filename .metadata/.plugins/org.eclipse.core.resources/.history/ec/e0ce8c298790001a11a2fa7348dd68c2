@@ -1,0 +1,43 @@
+package cz.nejepictejsiborec.tutorial;
+import java.util.Scanner;
+
+public class Tutorial4 {
+
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner (System.in);
+		String retezec;
+		System.out.println("Zadej retezec:");
+		retezec = in.nextLine();
+		String jmeno;
+		jmeno = in.nextLine();
+		System.out.println(retezec);
+	
+		pozdrav();
+		
+		zpracovani(jmeno, 20);
+		
+		System.out.println(scitej(20,30));
+		
+		System.exit(0);
+	}
+
+	public static void pozdrav() {
+		System.out.println("Ahoj!");
+	}
+	
+	public static void zpracovani(String arg, int vek) {
+		System.out.println("ahoj" + arg + "(" + vek + ")" + "!");
+	}
+
+	
+	
+	public static int scitej(int arg1, int arg2) {
+		int temp = arg1 + arg2;
+		return temp; // Tady se to ukončí ( kvůli return) , nic dál se neprovede
+	}
+	
+	
+	
+	
+}

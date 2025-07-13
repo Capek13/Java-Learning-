@@ -1,0 +1,22 @@
+package cz.nejepictejsiborec.tutorial;
+import java.util.Scanner;
+
+public class Tutorial4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner (System.in);
+		String retezec;
+		System.out.println("Zadej retezec:");
+		retezec = in.nextLine();
+		System.out.println(retezec);
+		
+		pozdrav();
+		
+	}
+
+	public static void pozdrav() {
+		System.out.println("Ahoj");
+	}
+	
+}
